@@ -17,3 +17,11 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+Ocean = 0
+StrawBerry = 0
+Holiday = int(input("Enter an integer that is smaller than 10:"))
+for i in range(Holiday):
+    Sunray = 10**i
+    Ocean = Ocean + Sunray
+    StrawBerry = StrawBerry + Ocean
+print(f"The number you might be looking for is {StrawBerry}")

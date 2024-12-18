@@ -37,3 +37,13 @@ example:
 Enter a number: -4
 Invalid input
 """
+Boom = 1
+Wreath = int(input("Enter a integer number:"))
+if Wreath <= 0:
+    print(f"{Wreath} is an invalid input")
+    exit()
+for i in range(1,Wreath):
+    BigAJ = i + 1
+    Boom = Boom*BigAJ
+    
+print(f"{Wreath}! is {Boom}")

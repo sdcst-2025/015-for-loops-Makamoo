@@ -23,3 +23,12 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+Cookie = 0
+for i in range(1,13):
+    Santa = float(input(f"Enter total purchases for month({i}):"))
+    Claus = float(input(f"Enter total payments for month({i}):"))
+    Ornament = Santa - Claus
+    Bell = (Cookie + Ornament)*0.02
+    print(f"2% interest has been charged: {Bell}")
+    Cookie = Cookie + Ornament + Bell
+    print(f"Your closing balance is {Cookie}")

@@ -22,3 +22,9 @@ enter a number:4
 ****
 
 """
+
+John = int(input("enter an integer less than 10:"))
+for i in range(John):
+    print(" ")
+    for i in range(John):
+        print("*",end='')

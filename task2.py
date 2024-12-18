@@ -14,3 +14,18 @@ Your GST is 2.75
 Your PST is 3.85
 Your total is 61.65
 """
+
+a = float(input("Enter in price of item #1:"))
+b = float(input("Enter in price of item #2:"))
+c = float(input("Enter in price of item #3:"))
+d = float(input("Enter in price of item #4:"))
+e = float(input("Enter in price of item #5:"))
+f = a+b+c+d+e
+print(f"Your subtotal is {f}")
+
+GST = round(f*.05,2)
+PST = round(f*.07,2)
+print(f"Your GST is {GST}")
+print(f"Your PST is {PST}")
+POTLUCK = round(f + GST + PST,2)
+print(f"Your total is {POTLUCK}")
